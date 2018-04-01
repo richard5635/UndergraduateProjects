@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int mian (void)
+{
+  int x=3;
+int *x_p

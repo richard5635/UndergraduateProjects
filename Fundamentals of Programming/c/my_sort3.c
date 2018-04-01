@@ -1,0 +1,30 @@
+#include<stdio.h>
+#define MAX 100
+
+int main(void)
+{
+  int score[MAX];
+    int count;
+    int input;
+    int i;
+
+    count=0;
+    while(1) {
+    printf ("input score> ");
+      scanf("%d", &input);
+      if (input == -1) {
+	break;
+      }
+      if (count >= MAX) {
+	break;
+      }
+      score [count]= input;
+      count++;
+    }
+
+    for (i=0; i< count; i++){
+    printf ("score[%d] : %d\n", i, score[i]);
+
+  }
+    return 0;
+}
